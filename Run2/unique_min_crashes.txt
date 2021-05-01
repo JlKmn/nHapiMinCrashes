@@ -1,0 +1,50 @@
+MSH|0000|||||||00|||2.8.1TXA||||||||||||||||||||||0
+Stack overflow.
+
+MSH|0000|||||||00|||2.7.1OBX||PPN|||0
+Stack overflow.
+
+MSH|0000|||||||00|||2.7.1TXA||||||||||||||||||||||0
+Stack overflow.
+
+MSH|0000|||||||00|||2.8.1OBX||PPN|||0
+Stack overflow.
+
+MSH|^000|||||||ADT^A03*|||2.7000|
+Unhandled exception. System.NullReferenceException: Object reference not set to an instance of an object.
+   at NHapi.Base.Parser.ParserBase.InstantiateMessage(String theName, String theVersion, Boolean isExplicit)
+   at NHapi.Base.Parser.PipeParser.DoParse(String message, String version)
+   at NHapi.Base.Parser.ParserBase.Parse(String message, String version)
+   at NHapi.Base.Parser.ParserBase.Parse(String message)
+   at nHapi.Fuzz.Program.<>c.<Main>b__0_0(Stream stream) in /app/nHapi.Dbg/Program.cs:line 20
+   at SharpFuzz.Fuzzer.RunWithoutAflFuzz(Action`1 action, Stream stream)
+   at SharpFuzz.Fuzzer.Run(Action`1 action)
+   at nHapi.Fuzz.Program.Main(String[] args) in /app/nHapi.Dbg/Program.cs:line 13
+
+MSH|0000||H|H|||||||2.80HHHHH|0
+Unhandled exception. System.NullReferenceException: Object reference not set to an instance of an object.
+   at NHapi.Base.Parser.MessageIterator.AddNonStandardSegmentAtCurrentPosition()
+   at NHapi.Base.Parser.MessageIterator.MoveNext()
+   at NHapi.Base.Parser.PipeParser.Parse(IMessage message, String string)
+   at NHapi.Base.Parser.PipeParser.DoParse(String message, String version)
+   at NHapi.Base.Parser.ParserBase.Parse(String message, String version)
+   at NHapi.Base.Parser.ParserBase.Parse(String message)
+   at nHapi.Fuzz.Program.<>c.<Main>b__0_0(Stream stream) in /app/nHapi.Dbg/Program.cs:line 20
+   at SharpFuzz.Fuzzer.RunWithoutAflFuzz(Action`1 action, Stream stream)
+   at SharpFuzz.Fuzzer.Run(Action`1 action)
+   at nHapi.Fuzz.Program.Main(String[] args) in /app/nHapi.Dbg/Program.cs:line 13
+
+MSH|0000|||||||00|||2.8.1^MIN2||||||||||||||||||||||||||||0
+Stack overflow.
+
+MSH|0000|||||||00|||2.8.1^MOBX||RMC|||0
+Stack overflow.
+
+MSH|0~00|||||||000|||2.7.1^MIN2||||||||||||||||||||||||||||0
+Stack overflow.
+
+MSH|0~00||0|||||000|||2.8.10000000000000000000000000000000000000000000000000^MOBX||RMC|||~
+Stack overflow.
+
+MSH|0000|||||||00|||2.7.1^MOBX||PTA|||0
+Stack overflow.
